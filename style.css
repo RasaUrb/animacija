@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+.saulelydis{
+    height: 100vh;
+    background-image: url("jura.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    animation-name: temsta;
+    animation-duration: 25s;
+    animation-delay: 15s;
+    }
+.saule{
+    background-image: url("sun.png");
+    width: 608px;
+    height: 596px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    opacity: 0.3;
+    animation-duration: 25s;
+    animation-name: saulelydis;
+    z-index: 2;
+    animation-delay: 4s;
+}
+.debesis{
+    background-image: url('2-cloud-png-image.png');
+    width: 315px;
+    height: 243px;
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    z-index: 1;
+    animation-name: plaukia;
+    animation-duration: 25s;
+    animation-delay: 6s;
+}
+.ryklys{
+    background-image: url('ryklys.png');
+    position: absolute;
+    height: 412px;
+    width: 800px;
+    left: 5%;
+    top: 60%;
+    z-index: 1;
+    animation-name: niam;
+    animation-duration: 25s ;
+   animation-delay: 1s;
+}
+
+@keyframes plaukia{
+    from{
+        left: 5%;
+        top: 20%;
+        scale: scale (2)
+
+    }
+    to{
+        left: 80%;
+        top: 20;
+        scale: scale (2)
+    }
+}
+@keyframes temsta{
+    from{
+        filter: brightness(100%);
+
+    }
+    to{
+     filter: brightness(2%)
+    }
+    
+}
+@keyframes saulelydis{
+    from{
+        top: 2%;
+        left: 2%;
+        opacity: 1;
+    }
+    to{
+        top: 40%;
+        left: 60%;
+        opacity: 0;
+    }
+}
+
+@keyframes niam{
+    from{
+        transform: scale(0.01);
+        opacity: 0;
+        left: 5%;
+        top: 60%;
+    }
+    to{
+        transform:scale(3);
+        opacity: 1;
+        left: 5%;
+        top: 70;
+    }
+}
